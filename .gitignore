@@ -1,3 +1,6 @@
+# Deco
+\.deco/
+
 # OSX
 #
 .DS_Store
@@ -35,22 +38,59 @@ local.properties
 node_modules/
 npm-debug.log
 yarn-error.log
+scripts/localization-csv-to-json/node_modules/*/**
+
+# Jest
+#
+.jest/
 
 # BUCK
 buck-out/
 \.buckd/
-*.keystore
 
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
 # screenshots whenever they are needed.
 # For more information about the recommended setup visit:
-# https://docs.fastlane.tools/best-practices/source-control/
+# https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Gitignore.md
 
-*/fastlane/report.xml
-*/fastlane/Preview.html
-*/fastlane/screenshots
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/metadata
+fastlane/changelog
+*.dSYM.zip
 
-# Bundle artifact
-*.jsbundle
+package-lock.json
+.vscode/.react/*
+
+android/app/src/main/assets/static_word_database.json
+topics.csv
+words.csv
+version.csv
+sound/*
+android/app/src/main/res/raw/*
+ios/fastlane/report*
+.babelish.token
+/svg/*
+
+ios/assets/*
+!.gitkeep
+
+ios/main.jsbundle.meta
+android/main.jsbundle
+android/main.jsbundle.map
+android/main.jsbundle.meta
+
+# i18n
+translations.csv
+
+# Android apk
+*.apk
+
+scripts/dist
+scripts/csv/*
+/android/app/google-services.json
+
+tmp/*
