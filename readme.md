@@ -1,1 +1,1 @@
-#DCC++ throttle client for iOS and Android devices
+# DCC++ throttle client for iOS and Android devices
